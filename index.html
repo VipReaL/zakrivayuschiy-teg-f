@@ -3,17 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark light">
     <title>Закрывающий тег</title>
+    <link rel="icon" href="images/favicon.ico" sizes="any">
+    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="images/favicon.png">
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
+    <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header">
+    <header class="header border">
+      <h1 class="header__title">закрывающий тег</h1>
+      <p class="header__subtitle">&lt/HTML&gt</p>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -40,7 +46,57 @@
         </ul>
       </nav>
     </header>
-    <main></main>
+    <main class="main">
+      <article class="card border">
+        <h2 class="card__heading">
+          Фритрек и нулевой спринт: Подготовка к работе
+        </h2>
+        <div class="card__image-inner-wrap border">
+          <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
+        </div>
+        <div class="card__text-inner-wrap">
+          <p>
+            Это было самое начало пути.
+            На этом этапе важно было проникнуться основами и настроиться на учёбу.
+            И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
+          </p>
+          <p>
+            Место для ваших воспоминаний о начале обучения.
+          </p>
+          <div  class="card__button-inner-wrap">
+            <button class="card__button">
+              Like
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card border">
+        <h2 class="card__heading">
+          1 спринт: Я — чистый лист
+        </h2>
+        <div class="card__image-inner-wrap border">
+          <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
+        </div>
+        <div class="card__text-inner-wrap">
+          <p>
+            На первых этапах мы работали со страхами и сомнениями,
+            которые часто испытывают новички.
+            Один из них — страх перед чистым листом.
+            Это, конечно же, намного сложнее, чем боязнь куска бумаги.
+            Часто за этим ощущением скрываются более глубокие вопросы:
+            с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?
+          </p>
+          <p>
+            Место для ваших воспоминаний о начале первого спринта.
+          </p>
+          <div  class="card__button-inner-wrap">
+            <button class="card__button">
+              Like
+            </button>
+          </div>
+        </div>
+      </article>
+    </main>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
