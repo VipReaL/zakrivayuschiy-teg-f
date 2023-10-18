@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="color-scheme" content="dark light">
+    <meta name="color-scheme" content="light dark">
     <title>Закрывающий тег</title>
-    <link rel="icon" href="images/favicon.ico" sizes="any">
-    <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
-    <link rel="apple-touch-icon" href="images/favicon.png">
+    <link rel="icon" href="./images/icon/favicon.ico" sizes="any">
+    <link rel="icon" href="./images/icon/favicon.svg">
+    <link rel="apple-touch-icon" href="./images/icon/mobile-icon.png">
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
@@ -17,14 +17,18 @@
     <script src="./scripts/set-theme.js"></script>
   </head>
   <body class="page">
-    <header class="header border">
+    <header class="header border container">
       <h1 class="header__title">закрывающий тег</h1>
-      <p class="header__subtitle">&lt/HTML&gt</p>
+      <p class="header__subtitle">&lt/html&gt</p>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
           <li class="theme-menu__item">
-            <button type="button" data-theme="dark" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="dark"
+              class="button theme-menu__button"
+            >
               Темно
             </button>
           </li>
@@ -33,20 +37,24 @@
               type="button"
               data-theme="auto"
               disabled
-              class="theme-menu__button"
+              class="button theme-menu__button"
             >
               Авто
             </button>
           </li>
           <li class="theme-menu__item">
-            <button type="button" data-theme="light" class="theme-menu__button">
+            <button
+              type="button"
+              data-theme="light"
+              class="button theme-menu__button"
+            >
               Светло
             </button>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="main">
+    <main class="main container">
       <article class="card border">
         <h2 class="card__heading">
           Фритрек и нулевой спринт: Подготовка к работе
@@ -55,16 +63,19 @@
           <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
         </div>
         <div class="card__text-inner-wrap">
-          <p>
+          <p class="card__text">
             Это было самое начало пути.
             На этом этапе важно было проникнуться основами и настроиться на учёбу.
             И, возможно, подумать, как новые знания могут повлиять на ваше будущее.
           </p>
-          <p>
+          <p class="card__text">
             Место для ваших воспоминаний о начале обучения.
           </p>
           <div  class="card__button-inner-wrap">
-            <button class="card__button">
+            <button class="button card__icon-button is-liked">
+              <img src="/images/svg/heart.svg" alt="" width="27" height="24">
+            </button>
+            <button class="button card__like-button border button__text">
               Like
             </button>
           </div>
@@ -78,7 +89,7 @@
           <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
         </div>
         <div class="card__text-inner-wrap">
-          <p>
+          <p class="card__text">
             На первых этапах мы работали со страхами и сомнениями,
             которые часто испытывают новички.
             Один из них — страх перед чистым листом.
@@ -86,16 +97,186 @@
             Часто за этим ощущением скрываются более глубокие вопросы:
             с чего начать? а вдруг будет слишком сложно? что, если я не справлюсь?
           </p>
-          <p>
+          <p class="card__text">
             Место для ваших воспоминаний о начале первого спринта.
           </p>
           <div  class="card__button-inner-wrap">
-            <button class="card__button">
+            <button class="button card__icon-button is-liked">
+              <img src="/images/svg/heart.svg" alt="" width="27" height="24">
+            </button>
+            <button class="button card__like-button border button__text">
               Like
             </button>
           </div>
         </div>
       </article>
+      <article class="card border">
+        <h2 class="card__heading">
+          1 спринт: А если не получится?
+        </h2>
+        <div class="card__image-inner-wrap border">
+          <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
+        </div>
+        <div class="card__text-inner-wrap">
+          <p class="card__text">
+            Первый проект — позади! Но это всё ещё самое начало пути.
+            Радость могла быстро померкнуть и смениться ожиданием провала.
+            Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний об окончании первого спринта.
+          </p>
+          <div  class="card__button-inner-wrap">
+            <button class="button card__icon-button is-liked">
+              <img src="/images/svg/heart.svg" alt="" width="27" height="24">
+            </button>
+            <button class="button card__like-button border button__text">
+              Like
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card border">
+        <h2 class="card__heading">
+          2 спринт: Погоня за идеалом
+        </h2>
+        <div class="card__image-inner-wrap border">
+          <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
+        </div>
+        <div class="card__text-inner-wrap">
+          <p class="card__text">
+            На этом этапе вы уже достаточно разбирались в основах вёрстки,
+            чтобы понять, как много ещё впереди.
+            Вы могли попытаться погнаться за идеалом и понять, что он недостижим.
+            А, может, вы вовсе и не подвержены перфекционизму и вместо того,
+            чтобы сделать идеально, старались просто сделать.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале второго спринта.
+          </p>
+          <div  class="card__button-inner-wrap">
+            <button class="button card__icon-button is-liked">
+              <img src="/images/svg/heart.svg" alt="" width="27" height="24">
+            </button>
+            <button class="button card__like-button border button__text">
+              Like
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card border">
+        <h2 class="card__heading">
+          2 спринт: О тех, кто рядом
+        </h2>
+        <div class="card__image-inner-wrap border">
+          <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
+        </div>
+        <div class="card__text-inner-wrap">
+          <p class="card__text">
+            Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира).
+            Вас окружали одногруппники, команда сопровождения и просто близкие люди,
+            которым можно пожаловаться, если очередной макет просто так не поддавался.
+            Осваивать что-то новое легче, когда рядом есть единомышленники, не правда ли?
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний об окончании второго спринта.
+          </p>
+          <div  class="card__button-inner-wrap">
+            <button class="button card__icon-button is-liked">
+              <img src="/images/svg/heart.svg" alt="" width="27" height="24">
+            </button>
+            <button class="button card__like-button border button__text">
+              Like
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card border">
+        <h2 class="card__heading">
+          3 спринт: Обходные стратегии
+        </h2>
+        <div class="card__image-inner-wrap border">
+          <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
+        </div>
+        <div class="card__text-inner-wrap">
+          <p class="card__text">
+            На этом курсе вы постоянно решали разные задачи.
+            В какой-то момент вам могло показаться, что решения просто иссякли.
+            Значит, пришло время посмотреть на задачу под другим углом.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний о начале третьего спринта.
+          </p>
+          <div  class="card__button-inner-wrap">
+            <button class="button card__icon-button is-liked">
+              <img src="/images/svg/heart.svg" alt="" width="27" height="24">
+            </button>
+            <button class="button card__like-button border button__text">
+              Like
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card border">
+        <h2 class="card__heading">
+          3 спринт: Когда опускаются руки
+        </h2>
+        <div class="card__image-inner-wrap border">
+          <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
+        </div>
+        <div class="card__text-inner-wrap">
+          <p class="card__text">
+            Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься.
+            Вроде и проектную пора сдавать, и задачи хочется порешать,
+            и в теории получше разобраться, и жизнь не забыть пожить.
+            В такие моменты очень нужна концентрация. Вспомните, откуда вы её черпали.
+          </p>
+          <p class="card__text">
+            Место для ваших воспоминаний об окончании третьего спринта.
+          </p>
+          <div  class="card__button-inner-wrap">
+            <button class="button card__icon-button is-liked">
+              <img src="/images/svg/heart.svg" alt="" width="27" height="24">
+            </button>
+            <button class="button card__like-button border button__text">
+              Like
+            </button>
+          </div>
+        </div>
+      </article>
+      <article class="card border">
+        <h2 class="card__heading">
+          «Сейчас я здесь»
+        </h2>
+        <div class="card__image-inner-wrap border">
+          <img class="card__image" src="/images/image.jpg" alt="Автофургон в пиксельном стиле">
+        </div>
+        <div class="card__text-inner-wrap">
+          <p class="card__text">
+            Сейчас вы уже очень много знаете о вёрстке. Но это только начало.
+            Во-первых, впереди ещё много материала про «красотищу».
+            Во-вторых, с окончанием курса учёба не заканчивается.
+            Вёрстка — это целый мир. И этот мир постоянно меняется.
+            Познать его полностью не получится, но это тот случай,
+            когда важен сам процесс познания. Ведь часто путь — и есть результат.
+          </p>
+          <p class="card__text">
+            Место, чтобы остановиться, подумать и написать,
+            что вы чувствуете в этой точке пути.
+          </p>
+          <div  class="card__button-inner-wrap">
+            <button class="button card__icon-button is-liked">
+              <img src="/images/svg/heart.svg" alt="" width="27" height="24">
+            </button>
+            <button class="button card__like-button border button__text">
+              Like
+            </button>
+          </div>
+        </div>
+      </article>
+      <button class="button border main__button">
+        Сохранить на память
+      </button>
     </main>
     <script src="./scripts/like.js"></script>
   </body>
