@@ -146,6 +146,62 @@
   object-position: center;
 }
 
+.card__image-1 {
+  filter: ;
+}
+
+.card__image-2 {
+  filter: sepia(0.6) saturate(60%) brightness(80%);
+}
+
+.card__image-3 {
+  filter: saturate(300%);
+}
+
+.card__image-4 {
+  filter: hue-rotate(0.1turn);
+}
+
+.card__image-5 {
+  filter: invert(80%);
+}
+
+.card__image-6 {
+  filter: sepia(0.6) contrast(60%);
+}
+
+.card__image-7 {
+  filter: blur(15px);
+}
+
+.card__image-8 {
+  filter: invert(80%) hue-rotate(0.7turn) brightness(60%);
+}
+
+.lable {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-family: var(--font-accent);
+  font-size: var(--text-menu-size);
+  text-transform: uppercase;
+  opacity: 0.5;
+  mix-blend-mode: hard-light;
+  text-shadow:
+    1px 1px var(--text-color-shadow),
+    -1px -1px var(--text-color-shadow),
+    -1px 1px var(--text-color-shadow),
+    1px -1px var(--text-color-shadow);
+}
+
+@supports ((text-stroke: 1px var(--text-color-shadow)) or (-webkit-text-stroke: 1px var(--text-color-shadow))) {
+  .lable {
+    -webkit-text-stroke: 1px var(--text-color-shadow);
+    text-stroke: 1px var(--text-color-shadow);
+    text-shadow: none;
+  }
+}
+
 .card__text-inner-wrap {
   padding: 25px;
 }

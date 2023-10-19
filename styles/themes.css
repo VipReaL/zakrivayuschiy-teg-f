@@ -10,7 +10,7 @@
   --border-color: black;
   --text-color: black;
   --text-color-accent: rgba(0, 0, 0, 0.6);
-  --text-color-shadow: rgba(0, 0, 0, 0.5);
+  --text-color-shadow: white;
   --like-color: #FF0000;
   --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --subtitle-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -28,7 +28,7 @@
   --border-color: #00CC14;
   --text-color: #00CC14;
   --text-color-accent: rgba(0, 204, 20, 0.6);
-  --text-color-shadow: rgba(0, 204, 20, 0.5);
+  --text-color-shadow: black;
   --like-color: #FF0000;
   --heading-font-weight: 785;
   --text-font-weight: 465;
@@ -43,7 +43,7 @@
     --border-color: #00CC14;
     --text-color: #00CC14;
     --text-color-accent: rgba(0, 204, 20, 0.6);
-    --text-color-shadow: rgba(0, 204, 20, 0.5);
+    --text-color-shadow: black;
     --like-color: #FF0000;
     --heading-font-weight: 785;
     --text-font-weight: 465;
