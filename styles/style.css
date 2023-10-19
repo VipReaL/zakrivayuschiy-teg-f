@@ -102,14 +102,42 @@
 }
 
 .theme-menu__item {
-
+  position: relative;
 }
 
 .theme-menu__button {
   line-height: normal;
   text-transform: uppercase;
+  transition: ease 0.3s;
 }
 
+.theme-menu__button:hover {
+  opacity: 0.6;
+  transition: ease 0.3s;
+  cursor: pointer;
+}
+
+.theme-menu__button:focus {
+  outline: none;
+}
+
+.theme-menu__button:focus-visible {
+  opacity: 0.6;
+  transition: ease 0.3s;
+}
+
+.theme-menu__button:disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.theme-menu__button:disabled::before {
+  pointer-events: none;
+  opacity: 0.6;
+  content: '▶';
+  position: absolute;
+  left: -20px;
+}
 
 
 
