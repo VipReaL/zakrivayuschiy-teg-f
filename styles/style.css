@@ -1,6 +1,8 @@
-/* Здесь вы напишете основную часть стилей страницы.
+/* 
+Здесь вы напишете основную часть стилей страницы.
 
-Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
+Будьте внимательны! Для корректной работы скриптов на этом сайте нужно,
+чтобы в HTML некоторые классы были названы особым образом:
 ✦ theme-dark — класс тёмной темы
 ✦ theme-light — класс светлой темы
 ✦ like-icon — для svg-иконки анимированного сердца
@@ -10,8 +12,8 @@
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
-Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
-
+Кроме этого, не меняйте HTML переключателя тем. 
+Его разметка также гарантирует работу своего скрипта.
 */
 
 .page {
@@ -20,14 +22,15 @@
 
   padding-block-start: 99px;
 
-  background-image:
-    repeating-linear-gradient( 90deg, #d3d3d3 0 2px, transparent 2px 4px ),
-    repeating-linear-gradient( 0deg, #d3d3d3 0 2px, transparent 2px 4px ),
-    linear-gradient(#e7e7e7, #1a1a1a);
+  background-image: var(--background-image-gradient);
   background-attachment: fixed;
   background-size: cover;
 
+  font-family: var(--font, 'Arial', 'sans-serif');
   color: var(--text-color, #000);
+  font-size: var(--text-size, 18px);
+  font-style: normal;
+  font-variation-settings: 'wght' var(--text-font-weight, 400);
 }
 
 .container {
@@ -37,7 +40,6 @@
 
 .button {
   font-family: 'PressStart2P';
-  /* color: var(--text-color, #000); */
   font-size: var(--text-menu-size);
   font-style: normal;
   font-weight: 400;
@@ -64,7 +66,6 @@
 
 .header__title {
   order: 2;
-  /* color: var(--text-color, #000); */
   font-family: 'PressStart2P';
   font-size: var(--title-size);
   font-style: normal;
@@ -76,7 +77,6 @@
 
 .header__subtitle {
   order: 1;
-  /* color: var(--text-color, #000); */
   font-family: 'PressStart2P';
   font-size: var(--subtitle-size);
   font-style: normal;
@@ -126,11 +126,7 @@
 }
 
 .card__heading {
-  /* color: var(--text-color, #000); */
-  font-family: 'Inter-Variable';
-  font-size: var(--text-size, 18px);
-  font-style: normal;
-  font-weight: 700;
+  font-variation-settings: 'wght' var(--heading-font-weight, 700);
   line-height: normal;
   padding: 5px 10px;
 }
@@ -154,20 +150,15 @@
   padding: 25px;
 }
 
-.card__text-inner-wrap p:not(:last-of-type)  {
+.card__text-inner-wrap p:not(:last-of-type) {
   margin-block-end: 27px;
 }
 
-.card__text-inner-wrap p:last-of-type  {
+.card__text-inner-wrap p:last-of-type {
   margin-block-end: 25px;
 }
 
 .card__text {
-  /* color: var(--text-color, #000); */
-  font-family: 'Inter-Variable';
-  font-size: var(--text-size, 18px);
-  font-style: normal;
-  font-weight: 400;
   line-height: 21px; /* 116.667% */
 }
 

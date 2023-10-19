@@ -16,7 +16,11 @@
   --subtitle-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --text-menu-size: 14px;
   --text-size: 18px;
-
+  --heading-font-weight: 700;
+  --text-font-weight: 400;
+  --c1: #d3d3d3;
+  --c2: #e7e7e7;
+  --c3: #1a1a1a;
 }
 
 :root.theme-dark {
@@ -26,7 +30,11 @@
   --text-color-accent: rgba(0, 204, 20, 0.6);
   --text-color-shadow: rgba(0, 204, 20, 0.5);
   --like-color: #FF0000;
-
+  --heading-font-weight: 785;
+  --text-font-weight: 465;
+  --c1: #000;
+  --c2: #007f0c;
+  --c3: #004306;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -37,5 +45,10 @@
     --text-color-accent: rgba(0, 204, 20, 0.6);
     --text-color-shadow: rgba(0, 204, 20, 0.5);
     --like-color: #FF0000;
+    --heading-font-weight: 785;
+    --text-font-weight: 465;
+    --c1: #000;
+    --c2: #007f0c;
+    --c3: #004306;
   }
 }

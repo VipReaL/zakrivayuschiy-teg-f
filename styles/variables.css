@@ -1,4 +1,8 @@
-/* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+/* 
+  В этом файле будут храниться все значения переменных в исходном состоянии,
+  а так же их изменения в зависимости от ширины устройства
+*/
+
 :root {
   --background-color: white;
   --border-color: black;
@@ -6,32 +10,20 @@
   --text-color-accent: rgba(0, 0, 0, 0.6);
   --text-color-shadow: rgba(0, 0, 0, 0.5);
   --like-color: #FF0000;
+  --font: 'Inter-Variable';
+  --font-accent: 'PressStart2P';
   --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --subtitle-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --text-menu-size: 14px;
   --text-size: 18px;
-}
+  --heading-font-weight: 700;
+  --text-font-weight: 400;
 
-/*
-:root {
-  --background-color: black;
-  --border-color: #00CC14;
-  --text-color: #00CC14;
-  --text-color-accent: rgba(0, 204, 20, 0.6);
-  --text-color-shadow: rgba(0, 204, 20, 0.5);
-  --like-color: #FF0000;
+  --c1: #d3d3d3;
+  --c2: #e7e7e7;
+  --c3: #1a1a1a;
+  --background-image-gradient: 
+    repeating-linear-gradient( 90deg, var(--c1) 0 2px, transparent 2px 4px ),
+    repeating-linear-gradient( 0deg, var(--c1) 0 2px, transparent 2px 4px ),
+    linear-gradient(var(--c2), var(--c3));
 }
-*/
-
-/*
-:root {
-  --c1: red;
-  --c2: blue;
-  --grad: linear-gradient(var(--c1), var(--c2));
-}
-
-.element {
-  --c1: green;
-  background: var(--grad);
-}
-*/
