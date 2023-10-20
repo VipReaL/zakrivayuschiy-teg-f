@@ -11,6 +11,7 @@
   --text-color: black;
   --text-color-accent: black;
   --text-color-shadow: white;
+  --color-span-button: white;
   --like-color: #FF0000;
   --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --subtitle-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
@@ -29,6 +30,7 @@
   --text-color: #00CC14;
   --text-color-accent: #00CC14;
   --text-color-shadow: black;
+  --color-span-button: #00CC14;
   --like-color: #FF0000;
   --heading-font-weight: 785;
   --text-font-weight: 465;
@@ -44,6 +46,7 @@
     --text-color: #00CC14;
     --text-color-accent: #00CC14;
     --text-color-shadow: black;
+    --color-span-button: #EB3B74;
     --like-color: #FF0000;
     --heading-font-weight: 785;
     --text-font-weight: 465;
