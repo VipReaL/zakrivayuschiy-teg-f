@@ -21,3 +21,122 @@
     transform: translateX(-4px);
   }
 }
+
+.like-icon.is-liked .heart {
+  animation-name: heart;
+  animation-delay: 0.1s;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+}
+
+@keyframes heart {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.like-icon.is-liked .sparks {
+  animation-name: sparks;
+  animation-delay: 0.3s;
+  animation-duration: 0.3s;
+  animation-timing-function: ease-in;
+  transform-origin: center;
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.contour {
+  fill: var(--border-color);
+  transition-property: fill;
+  transition-duration: 0.1s;
+  transition-timing-function: linear;
+}
+
+.core {
+  fill: transparent;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.heart:hover .core {
+  fill: var(--border-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.05s;
+  transition-timing-function: linear;
+}
+
+.heart:active .core {
+  fill: var(--like-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.05s;
+  transition-timing-function: linear;
+}
+
+.main-body {
+  fill: transparent;
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.03s;
+  transition-timing-function: linear;
+}
+
+.heart:hover .main-body {
+  fill: var(--border-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.heart:active .main-body {
+  fill: var(--like-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--like-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.03s;
+  transition-timing-function: linear;
+}
+
+.like-icon.is-liked .core {
+  fill: var(--like-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.05s;
+  transition-timing-function: linear;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--like-color);
+  transition-property: fill;
+  transition-duration: 0.3s;
+  transition-delay: 0.06s;
+  transition-timing-function: linear;
+}

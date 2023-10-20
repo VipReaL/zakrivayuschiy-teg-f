@@ -46,6 +46,7 @@
   border: none;
   padding: 0;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .border {
@@ -188,6 +189,7 @@
   justify-content: center;
   aspect-ratio: 1/1;
   margin-block-end: 3px;
+  overflow: hidden;
 }
 
 .card__image {
@@ -273,11 +275,25 @@
 }
 
 .card__icon-button {
-
+  border: 2px solid transparent; 
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.is-liked {
+.card__icon-button:focus {
+ outline: none;
+}
 
+.card__icon-button:focus-visible {
+  border: 2px solid var(--border-color);
+  transition: 0.3s ease;
+ }
+
+.like-icon {
+  cursor: pointer;
 }
 
 .card__like-button{
@@ -321,14 +337,14 @@
   transition: ease 0.3s;
 }
 
-.button__text {
+.card__like-button-text {
   width: 130px;
   height: 38px;
   line-height: 90%; /* 12.6px */
 }
 
-.button-span {
-  position: absolute;
+.button__text {
+  /* position: absolute; */
   color: var(--color-span-button);
   mix-blend-mode: difference;
 }
@@ -337,6 +353,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
   position: relative;
   width: 335px;
   height: 51px;
@@ -372,6 +389,91 @@
 }
 
 .main__save-button:focus-visible {
+  box-shadow: 2px 2px var(--border-color);
+  transition: ease 0.3s;
+}
+
+.button__svg {
+  width: 21px;
+  height: 21px;
+  color: var(--color-span-button);
+  mix-blend-mode: difference;
+}
+
+.dialog {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: fixed;
+  inset: 0;
+  padding: 30px;
+  color: var(--text-color, #000);
+}
+
+.dialog:not([open]) {
+  pointer-events: none;
+  opacity: 0;
+} 
+
+.dialog::backdrop {
+  background-color: rgb(0 0 0 / 0.7);
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-family: var(--font-accent);
+  font-size: var(--text-menu-size);
+  line-height: 150%; /* 21px */
+  text-transform: uppercase;
+}
+
+.box p {
+  max-width: 234px;
+}
+
+.dialog__svg {
+  width: 40px;
+  height: 40px;
+}
+
+.dialog__button {
+  text-transform: uppercase;
+  padding: 10px;
+  position: relative;
+}
+
+.dialog__button::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--border-color);
+  transition: 0.5s ease-in-out;
+  transform-origin: left;
+  transform: scaleX(0);
+}
+
+.dialog__button:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--border-color);
+  transition: 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.dialog__button:focus {
+  outline: none;
+}
+
+.dialog__button:focus-visible {
   box-shadow: 2px 2px var(--border-color);
   transition: ease 0.3s;
 }
