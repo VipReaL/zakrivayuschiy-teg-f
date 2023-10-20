@@ -50,7 +50,7 @@
 }
 
 .border {
-  background: var(--background-color, #FFF);
+  background: var(--background-color, #fff);
   border: 2px solid var(--border-color, #000);
 }
 
@@ -115,7 +115,7 @@
   position: absolute;
   right: 0;
   bottom: -3px;
-  width: 100%; 
+  width: 100%;
   height: 2px;
   background-color: var(--text-color-accent);
   transition: ease 0.3s;
@@ -145,7 +145,7 @@
   position: absolute;
   right: 0;
   bottom: -3px;
-  width: 100%; 
+  width: 100%;
   height: 2px;
   background-color: var(--text-color-accent);
   transition: ease 0.3s;
@@ -243,7 +243,11 @@
     1px -1px var(--text-color-shadow);
 }
 
-@supports ((text-stroke: 1px var(--text-color-shadow)) or (-webkit-text-stroke: 1px var(--text-color-shadow))) {
+@supports (
+  (text-stroke: 1px var(--text-color-shadow)) or
+    (-webkit-text-stroke: 1px var(--text-color-shadow))
+) {
+
   .lable {
     -webkit-text-stroke: 1px var(--text-color-shadow);
     text-stroke: 1px var(--text-color-shadow);
@@ -275,7 +279,7 @@
 }
 
 .card__icon-button {
-  border: 2px solid transparent; 
+  border: 2px solid transparent;
   width: 38px;
   height: 38px;
   display: flex;
@@ -284,19 +288,19 @@
 }
 
 .card__icon-button:focus {
- outline: none;
+  outline: none;
 }
 
 .card__icon-button:focus-visible {
   border: 2px solid var(--border-color);
   transition: 0.3s ease;
- }
+}
 
 .like-icon {
   cursor: pointer;
 }
 
-.card__like-button{
+.card__like-button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -413,7 +417,7 @@
 .dialog:not([open]) {
   pointer-events: none;
   opacity: 0;
-} 
+}
 
 .dialog::backdrop {
   background-color: rgb(0 0 0 / 0.7);
@@ -479,6 +483,7 @@
 }
 
 @media (width < 450px) {
+
   .header {
     padding-block-start: 120px;
   }

@@ -10,7 +10,7 @@
   --text-color-accent: black;
   --text-color-shadow: white;
   --color-span-button: white;
-  --like-color: #FF0000;
+  --like-color: #f00;
   --font: 'Inter-Variable';
   --font-accent: 'PressStart2P';
   --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
@@ -23,8 +23,11 @@
   --c1: #d3d3d3;
   --c2: #e7e7e7;
   --c3: #1a1a1a;
-  --background-image-gradient: 
-    repeating-linear-gradient( 90deg, var(--c1) 0 2px, transparent 2px 4px ),
-    repeating-linear-gradient( 0deg, var(--c1) 0 2px, transparent 2px 4px ),
+  --background-image-gradient: repeating-linear-gradient(
+      90deg,
+      var(--c1) 0 2px,
+      transparent 2px 4px
+    ),
+    repeating-linear-gradient(0deg, var(--c1) 0 2px, transparent 2px 4px),
     linear-gradient(var(--c2), var(--c3));
 }

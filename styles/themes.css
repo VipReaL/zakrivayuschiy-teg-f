@@ -12,7 +12,7 @@
   --text-color-accent: black;
   --text-color-shadow: white;
   --color-span-button: white;
-  --like-color: #FF0000;
+  --like-color: #f00;
   --title-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   --subtitle-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
   --text-menu-size: 14px;
@@ -26,12 +26,12 @@
 
 :root.theme-dark {
   --background-color: black;
-  --border-color: #00CC14;
-  --text-color: #00CC14;
-  --text-color-accent: #00CC14;
+  --border-color: #00cc14;
+  --text-color: #00cc14;
+  --text-color-accent: #00cc14;
   --text-color-shadow: black;
-  --color-span-button: #00CC14;
-  --like-color: #FF0000;
+  --color-span-button: #00cc14;
+  --like-color: #f00;
   --heading-font-weight: 785;
   --text-font-weight: 465;
   --c1: #000;
@@ -40,14 +40,15 @@
 }
 
 @media (prefers-color-scheme: dark) {
+
   :root {
     --background-color: black;
-    --border-color: #00CC14;
-    --text-color: #00CC14;
-    --text-color-accent: #00CC14;
+    --border-color: #00cc14;
+    --text-color: #00cc14;
+    --text-color-accent: #00cc14;
     --text-color-shadow: black;
-    --color-span-button: #00CC14;
-    --like-color: #FF0000;
+    --color-span-button: #00cc14;
+    --like-color: #f00;
     --heading-font-weight: 785;
     --text-font-weight: 465;
     --c1: #000;

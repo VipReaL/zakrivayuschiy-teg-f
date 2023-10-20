@@ -4,7 +4,7 @@
 */
 
 @font-face {
-  font-family: 'Inter-Variable';
+  font-family: Inter-Variable;
   src:
     local('Inter-Variable'),
     url(../fonts/Inter-Variable.woff2) format('woff2 supports variations'),
@@ -18,6 +18,6 @@
   src:
     local('PressStart2P'),
     url(../fonts/PressStart2P-Regular.woff) format('woff');
-    font-weight: 400;
-    font-display: swap;
+  font-weight: 400;
+  font-display: swap;
 }
