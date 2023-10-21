@@ -267,7 +267,7 @@
 }
 
 .card__text {
-  line-height: 21px; /* 116.667% */
+  line-height: 1.17;
 }
 
 .card__button-inner-wrap {
@@ -343,11 +343,10 @@
 .card__like-button-text {
   width: 130px;
   height: 38px;
-  line-height: 90%; /* 12.6px */
+  line-height: 0.9;
 }
 
 .button__text {
-  /* position: absolute; */
   color: var(--color-span-button, white);
   mix-blend-mode: difference;
 }
@@ -429,7 +428,7 @@
   gap: 20px;
   font-family: var(--font-accent, 'Courier New');
   font-size: var(--text-menu-size, 14px);
-  line-height: 150%; /* 21px */
+  line-height: 1.5;
   text-transform: uppercase;
 }
 

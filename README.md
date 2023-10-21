@@ -1,2 +1,2 @@
 # «Закрывающий тег»
-https://github.com/VipReaL/zakrivayuschiy-teg-f
+https://vipreal.github.io/zakrivayuschiy-teg-f/
