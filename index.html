@@ -9,8 +9,8 @@
     <link rel="icon" href="./images/icon/favicon.svg" />
     <link rel="apple-touch-icon" href="./images/icon/mobile-icon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
-    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
+    <link rel="stylesheet" href="./styles/globals.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/animations.css" />
     <link rel="stylesheet" href="./styles/themes.css" />
@@ -592,13 +592,11 @@
           </svg>
           <p>Вставьте дискету, чтобы продолжить</p>
         </div>
-        <button
-          class="dialog__button button border"
-          type="button"
-          onclick="window['dialog'].close()"
-        >
-          <span class="button__text">ok</span>
-        </button>
+        <form class="dialog__form" method="dialog">
+          <button class="dialog__button button border">
+            <span class="button__text">ok</span>
+          </button>
+        </form>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>

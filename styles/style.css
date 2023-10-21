@@ -24,7 +24,7 @@
   background-image: var(--background-image-gradient);
   background-attachment: fixed;
   background-size: cover;
-  font-family: var(--font, Arial);
+  font-family: var(--font, sans-serif);
   color: var(--text-color, black);
   font-size: var(--text-size, 18px);
   font-style: normal;
@@ -37,7 +37,7 @@
 }
 
 .button {
-  font-family: var(--font-accent, 'Courier New');
+  font-family: var(--font-accent, sans-serif);
   font-size: var(--text-menu-size, 14px);
   font-style: normal;
   font-weight: 400;
@@ -65,7 +65,7 @@
 
 .header__title {
   order: 2;
-  font-family: var(--font-accent, 'Courier New');
+  font-family: var(--font-accent, sans-serif);
   font-size: var(--title-size);
   font-style: normal;
   font-weight: 400;
@@ -76,7 +76,7 @@
 
 .header__subtitle {
   order: 1;
-  font-family: var(--font-accent, 'Courier New');
+  font-family: var(--font-accent, sans-serif);
   font-size: var(--subtitle-size);
   font-style: normal;
   font-weight: 400;
@@ -230,7 +230,7 @@
   position: absolute;
   top: 25px;
   right: 25px;
-  font-family: var(--font-accent, 'Courier New');
+  font-family: var(--font-accent, sans-serif);
   font-size: var(--text-menu-size, 14px);
   text-transform: uppercase;
   opacity: 0.5;
@@ -258,16 +258,13 @@
   padding: 25px;
 }
 
-.card__text-inner-wrap p:not(:last-of-type) {
-  margin-block-end: 27px;
-}
-
-.card__text-inner-wrap p:last-of-type {
-  margin-block-end: 25px;
-}
-
 .card__text {
+  margin-block-end: 27px;
   line-height: 1.17;
+}
+
+.card__text:last-of-type {
+  margin-block-end: 25px;
 }
 
 .card__button-inner-wrap {
@@ -426,7 +423,7 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  font-family: var(--font-accent, 'Courier New');
+  font-family: var(--font-accent, sans-serif);
   font-size: var(--text-menu-size, 14px);
   line-height: 1.5;
   text-transform: uppercase;
@@ -441,7 +438,12 @@
   height: 40px;
 }
 
+.dialog__form {
+  display: flex;
+}
+
 .dialog__button {
+  flex-grow: 1;
   text-transform: uppercase;
   padding: 10px;
   position: relative;
