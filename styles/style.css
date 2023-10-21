@@ -76,7 +76,7 @@
 
 .header__subtitle {
   order: 1;
-  font-family:var(--font-accent, 'Courier New');
+  font-family: var(--font-accent, 'Courier New');
   font-size: var(--subtitle-size);
   font-style: normal;
   font-weight: 400;
@@ -246,7 +246,7 @@
   (text-stroke: 1px var(--text-color-shadow)) or
     (-webkit-text-stroke: 1px var(--text-color-shadow))
 ) {
-
+  
   .lable {
     -webkit-text-stroke: 1px var(--text-color-shadow);
     text-stroke: 1px var(--text-color-shadow);
@@ -502,5 +502,4 @@
   .box p {
     max-width: 198px;
   }
-  
 }
